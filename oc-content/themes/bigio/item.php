@@ -368,7 +368,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
                         <form <?php if( osc_item_attachment() ) { ?>enctype="multipart/form-data"<?php } ?> action="<?php echo osc_base_url(true); ?>" method="post" name="contact_form" id="contact_form">
                             <?php osc_prepare_user_info(); ?>
                                 <label for="yourName"><?php _e('See the "Link To Social" section below listing
-                                (we are working on a better way to do this)', 'bigio'); ?><div id="custom_fields">
+                                (we are working on a better way to do this) <3', 'bigio'); ?><div id="custom_fields">
                         <?php if( osc_count_item_meta() >= 1 ) { ?>
                             <div class="meta_list">
                                 <?php while ( osc_has_item_meta() ) { ?>
