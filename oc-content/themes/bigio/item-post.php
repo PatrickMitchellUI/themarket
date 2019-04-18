@@ -266,10 +266,10 @@
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                     	<p><?php _e('Show e-mail on the listing page', 'bigio'); ?></p>
-                                    </div>-->
+                                    </div>
                                     <div class="col-lg-8 col-md-8 col-sm-8">
                                     	<?php ItemForm::show_email_checkbox(); ?>
-                                    </div>	
+                                    </div>	-->
                                     
                                 </div>
                                 <?php }; ?>
