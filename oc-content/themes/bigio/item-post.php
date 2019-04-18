@@ -224,21 +224,21 @@
                                 </div><br>
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
-                                    	<p><?php _e('City Area', 'bigio'); ?></p>
+                                    	<p><?php _e('Suburb', 'bigio'); ?></p>
                                     </div>
                                     <div class="col-lg-8 col-md-8 col-sm-8">
                                     <?php ItemForm::city_area_text(osc_user()); ?>
                                     </div>	
                                     
                                 </div>
-                                <div class="row">
+                                <!--<div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                     	<p><?php _e('Address', 'bigio'); ?></p>
                                     </div>
                                     <div class="col-lg-8 col-md-8 col-sm-8">
                                     <?php ItemForm::address_text(osc_user()); ?>
 
-                                    </div>	
+                                    </div>	-->
                                     
                                 </div>
                                  <?php if(!osc_is_web_user_logged_in() ) { ?>
