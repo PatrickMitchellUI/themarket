@@ -103,7 +103,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 											<td><strong><?php if ( osc_item_city() != "" ) { ?><?php _e("City", 'bigio'); ?></strong>: <?php echo osc_item_city(); ?><?php } ?></td>
 										</tr>
                                          <tr>
-											<td><strong><?php if ( osc_item_city_area() != "" ) { ?><?php _e("City area", 'bigio'); ?></strong>: <?php echo osc_item_city_area(); ?><?php } ?></td>
+											<td><strong><?php if ( osc_item_city_area() != "" ) { ?><?php _e("Suburb", 'bigio'); ?></strong>: <?php echo osc_item_city_area(); ?><?php } ?></td>
 										</tr>
                                         <tr>
 											<td><strong><?php if ( osc_item_address() != "" ) { ?><?php _e("Address", 'bigio'); ?></strong>: <?php echo osc_item_address(); ?><?php } ?></td>
