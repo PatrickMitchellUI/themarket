@@ -277,7 +277,13 @@
                                 <div class="col-lg-4 col-md-4 col-sm-4"><p></p>
                                 </div>
                                     <div class="col-lg-8 col-md-8 col-sm-8">
-                                    <?php ItemForm::plugin_post_item(); ?>
+                                    <?php
+ if($edit) {
+                            ItemForm::plugin_edit_item();
+                        } else {
+                            ItemForm::plugin_post_item();
+                        }
+?>
                                     </div>	
                                     
                                 </div><br>
