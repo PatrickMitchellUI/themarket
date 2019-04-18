@@ -1,0 +1,97 @@
+<?php
+    /*
+     *      Osclass – software for creating and publishing online classified
+     *                           advertising platforms
+     *
+     *                        Copyright (C) 2012 OSCLASS
+     *
+     *       This program is free software: you can redistribute it and/or
+     *     modify it under the terms of the GNU Affero General Public License
+     *     as published by the Free Software Foundation, either version 3 of
+     *            the License, or (at your option) any later version.
+     *
+     *     This program is distributed in the hope that it will be useful, but
+     *         WITHOUT ANY WARRANTY; without even the implied warranty of
+     *        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     *             GNU Affero General Public License for more details.
+     *
+     *      You should have received a copy of the GNU Affero General Public
+     * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
+     */
+?>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+        <!-- Stylesheets -->
+       <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,900,700italic,500italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="<?php echo osc_current_web_theme_url('css/bootstrap.min.css') ; ?>">
+		<link rel="stylesheet" href="<?php echo osc_current_web_theme_url('css/perfect-scrollbar.css') ; ?>">
+        <link rel="stylesheet" href="<?php echo osc_current_web_theme_url('css/flexslider.css') ; ?>" type="text/css" media="screen" />
+		<link rel="stylesheet" href="<?php echo osc_current_web_theme_url('css/fontello.css') ; ?>">
+        <link rel="stylesheet" href="<?php echo osc_current_web_theme_url('css/select.css') ; ?>">
+   		<link rel="stylesheet" href="<?php echo osc_current_web_theme_url('css/animation.css') ; ?>">
+        <link rel="stylesheet" href="<?php echo osc_current_web_theme_url('css/style.css') ; ?>">
+		<link rel="stylesheet" href="<?php echo osc_current_web_theme_url('css/owl.carousel.css') ; ?>">
+		<link rel="stylesheet" href="<?php echo osc_current_web_theme_url('css/owl.theme.css') ; ?>">
+		<link rel="stylesheet" href="<?php echo osc_current_web_theme_url('css/chosen.css') ; ?>">
+        
+        <!--[if lt IE 9]>
+ <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<link rel="stylesheet" href="<?php echo osc_current_web_theme_url('css/ie.css') ; ?>">
+        <![endif]-->
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="<?php echo osc_current_web_theme_url('css/fontello-ie7.css') ; ?>">
+		<![endif]-->
+
+<title><?php echo meta_title(); ?></title>
+<meta name="title" content="<?php echo osc_esc_html(meta_title()); ?>" />
+<?php if( meta_description() != '' ) { ?>
+<meta name="description" content="<?php echo osc_esc_html(meta_description()); ?>" />
+<?php } ?>
+<?php if( function_exists('meta_keywords') ) { ?>
+<?php if( meta_keywords() != '' ) { ?>
+<meta name="keywords" content="<?php echo osc_esc_html(meta_keywords()); ?>" />
+<?php } ?>
+<?php } ?>
+<?php if( osc_get_canonical() != '' ) { ?>
+<link rel="canonical" href="<?php echo osc_get_canonical(); ?>"/>
+<?php } ?>
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Expires" content="Fri, Jan 01 1970 00:00:00 GMT" />
+
+<script type="text/javascript">
+    var fileDefaultText = '<?php echo osc_esc_js( __('No file selected', 'bigio') ); ?>';
+    var fileBtnText     = '<?php echo osc_esc_js( __('Choose File', 'bigio') ); ?>';
+</script>
+<script src="<?php echo osc_current_web_theme_url('js/imagesloaded.pkgd.min.js') ; ?>"></script>
+<script src="<?php echo osc_current_web_theme_url('js/masonry.pkgd.min.js') ; ?>"></script>
+<script src="<?php echo osc_current_web_theme_url('js/jquery.fancybox.pack.js') ; ?>"></script>
+		<script defer src="<?php echo osc_current_web_theme_url('js/flexslider.min.js') ; ?>"></script>
+		<script src="<?php echo osc_current_web_theme_url('js/owl.carousel.min.js') ; ?>"></script>
+<?php
+//our theme start
+
+//our theme end
+
+//modern theme start
+osc_enqueue_style('style', osc_current_web_theme_url('style.css'));
+osc_enqueue_style('tabs', osc_current_web_theme_url('tabs.css'));
+osc_enqueue_style('jquery-ui-datepicker', osc_assets_url('css/jquery-ui/jquery-ui.css'));
+
+osc_register_script('jquery-uniform', osc_current_web_theme_js_url('jquery.uniform.js'), 'jquery');
+osc_register_script('global', osc_current_web_theme_js_url('global.js'));
+
+
+
+osc_enqueue_script('jquery');
+osc_enqueue_script('jquery-ui');
+osc_enqueue_script('jquery-uniform');
+osc_enqueue_script('tabber');
+osc_enqueue_script('global');
+//modern theme end
+osc_run_hook('header');
+
+FieldForm::i18n_datePicker();
+
+?>
