@@ -254,7 +254,7 @@
      * @param boolean $required
      * @return boolean
      */
-    function osc_validate_email ($email, $required = true)
+    function osc_validate_email ($email, $required = false)
     {
         if ($required || strlen($email) > 0) {
             // Test for the minimum length the email can be
