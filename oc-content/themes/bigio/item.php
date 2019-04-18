@@ -191,7 +191,6 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 					<div class="row button-row">
 						
 						<div class="col-lg-9 col-md-9 col-sm-9">
-							 <a class="button green" href="<?php echo osc_item_send_friend_url(); ?>" rel="nofollow"><i class="icons icon-share"></i><?php _e('Share', 'bigio'); ?></a>
 						
                          <?php if(osc_is_web_user_logged_in() && osc_logged_user_id()==osc_item_user_id()) { ?>
     <a class="button red" href="<?php echo osc_item_edit_url(); ?>" rel="nofollow"><?php _e('Edit item', 'bigio'); ?></a>                                 
